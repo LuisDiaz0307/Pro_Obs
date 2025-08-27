@@ -1,0 +1,22 @@
+{
+  "name": "pro_obs",
+  "version": "0.0.1",
+  "private": true,
+  "workspaces": [
+    "packages/core",
+    "packages/mobile",
+    "packages/web"
+  ],
+  "scripts": {
+    "start:mobile": "yarn workspace mobile run android",
+    "start:web": "yarn workspace web start",
+    "build:core": "yarn workspace @mi-proyecto/core build"
+  },
+  "devDependencies": {
+    "husky": "^8.0.0",
+    "lint-staged": "^13.0.0"
+  },
+  "dependencies": {
+    "yarn": "^1.22.22"
+  }
+}
