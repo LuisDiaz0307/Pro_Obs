@@ -1,0 +1,21 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@mi-proyecto/core/*": ["../core/src/*"]
+    },
+    "jsx": "react-native",
+    "allowJs": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "noEmit": true,
+    "isolatedModules": true,
+    "types": ["react-native"]  // <-- Aquí limitas los tipos globales solo a react-native
+  },
+  "include": [
+    "src/**/*",
+    "../core/src/**/*"
+  ],
+  "exclude": ["node_modules"]
+}
